@@ -1,0 +1,164 @@
+@font-face {
+  font-family: clipneon;
+  src: url('./fonts/Clip.ttf');
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.neon-wrap {
+   /* -webkit-transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);*/
+    color: #A9FFDC;
+    font-family: clipneon;
+    padding-top: 20vh;
+    font-size: 5vw;
+    line-height: 5vw;
+    text-shadow: 0vw 0vw 3vw #F40A35;
+    /*transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);*/
+    text-shadow: 
+    -.1vw 0vw .25vw #A9FFDC, -.2vw 0vw .25vw #A9FFDC, -.4vw 0vw .25vw #A9FFDC, 
+    -.1vw 0vw .1vw #00CC2A, -.2vw 0vw .1vw #00CC2A, -.4vw 0vw .1vw #00CC2A,
+    -.1vw 0vw .8vw #00CC2A, -.2vw 0vw .8vw #00CC2A, -.4vw 0vw .8vw #00CC2A, .2vw 0vw .5vw #00CC2A,
+    -.1vw 0vw .5vw #00CC2A, -.2vw 0vw .5vw #00CC2A, -.4vw 0vw .5vw #00CC2A, 
+    -.1vw 0vw 10vw #16FA19, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #16FA19;
+ }
+
+  .fa-heart-o {
+      color: #FBB4FF;
+      text-shadow: 
+    -.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF, 
+    -.1vw 0vw 1vw #E82FF5, -.2vw 0vw .8vw #E82FF5, -.4vw 0vw .8vw #E82FF5, .2vw 0vw .5vw #E82FF5,
+    -.1vw 0vw 10vw #CB16FA, -.2vw 0vw 10vw #CB16FA, -.4vw 0vw 10vw #CB16FA;
+  }
+
+  .off {
+    color: #4A7061;
+    display: inline-block;
+    text-shadow: 
+    -.1vw 0vw .25vw #4A7061, -.2vw 0vw .25vw #4A7061, -.4vw 0vw .25vw #4A7061, 
+    -.1vw 0vw .1vw #184D23, -.2vw 0vw .1vw #184D23, -.4vw 0vw .1vw #184D23,
+    -.1vw 0vw .8vw #184D23, -.2vw 0vw .8vw #184D23, -.4vw 0vw .8vw #184D23, .2vw 0vw .5vw #184D23,
+    -.1vw 0vw .5vw #184D23, -.2vw 0vw .5vw #184D23, -.4vw 0vw .5vw #184D23, 
+    -.1vw 0vw 2vw #184D23, -.2vw 0vw 2vw #184D23, -.4vw 0vw 2vw #184D23;
+  }
+
+  .heart-off {
+    animation: heart .1s ease infinite;
+    -moz-animation: heart .1s ease infinite;
+    /* Firefox */
+    -webkit-animation: heart .1s ease infinite;
+    /* Safari and Chrome */
+    -o-animation: heart .1s ease infinite;
+    /* Opera */
+  }
+
+  @keyframes heart {
+    0%,
+    100% {
+      /* Enable hardware acceleration to fix laggy transitions */
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      color: #FBB4FF;
+      text-shadow: 
+    -.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF, 
+    -.1vw 0vw 1vw #E82FF5, -.2vw 0vw .8vw #E82FF5, -.4vw 0vw .8vw #E82FF5, .2vw 0vw .5vw #E82FF5,
+    -.1vw 0vw 10vw #CB16FA, -.2vw 0vw 10vw #CB16FA, -.4vw 0vw 10vw #CB16FA;
+    }
+    50% {
+      /* Enable hardware acceleration to fix laggy transitions */
+     -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      color: #8F5493;
+      text-shadow: 
+    -.1vw 0vw .25vw #8F5493, -.2vw 0vw .25vw #8F5493, -.4vw 0vw .25vw #8F5493, 
+    -.1vw 0vw .8vw #59125E, -.2vw 0vw .8vw #59125E, -.4vw 0vw .8vw #59125E, .2vw 0vw .5vw #59125E,
+    -.1vw 0vw 3vw #42114E, -.2vw 0vw 3vw #42114E, -.4vw 0vw 3vw #42114E;
+    }
+  }
+
+.three-col-grid:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+#page-head {
+	min-height: 95%;
+	text-align: center;
+	font-family: clipneon;
+	font-size: 25px;
+	background-color: black;
+	background-image: url('../assets/lost-places-1572988_1280.jpg');
+  	background-attachment: fixed;
+    background-position: center;
+   	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	/*z-index: 1000;*/
+}
+
+.grid-wrap {
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.three-col-grid {
+	padding-left: 5vh;
+	padding-right: 5vh;
+}
+
+.grid-item {
+	width: calc((100% - 10px * 2) / 3);
+	margin-right: 10px;
+	margin-top: 15px;
+	float: left;
+}
+
+.grid-item:nth-child(3n+3) {
+	margin-right: 0;
+	float: right;
+}
+
+/*@media only screen and (max-width: 825px) {
+	.grid-item:nth-child(2n+2) {
+		margin-right: 0;
+		float: right;
+	}
+}*/
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  text-align: center;
+}
+
+.box-1 {
+	background-color: red;
+}
+
+.box-2 {
+	background-color: green;
+}
+
+.box-3 {
+	background-color: blue;
+}
+
