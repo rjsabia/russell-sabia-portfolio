@@ -18,7 +18,7 @@ html {
 }
 
 .neon-container {
-	padding-top: 35vh;
+	padding-top: 5vh;
 }
 
 .inline-blinker {
@@ -28,8 +28,8 @@ html {
 .neon-wrap {
     color: #fff;
     font-family: clipneon;
-    font-size: 6.5vw;
-    line-height: 6.5vw;
+    font-size: 5.5vw;
+    line-height: 5.5vw;
     text-shadow: 0vw 0vw 3vw #F40A35;
     text-shadow: 
     -.1vw 0vw .25vw #fff, -.2vw 0vw .25vw #fff, -.4vw 0vw .25vw #fff, 
@@ -60,9 +60,35 @@ html {
 	-.1vw 0vw 10vw #1041FF, -.2vw 0vw 10vw #1041FF, -.4vw 0vw 10vw #1041FF;
 }
 
+.yellow-js {
+	color: #fff;
+	text-shadow: 
+	 -.1vw 0vw .25vw #fafe28, -.2vw 0vw .25vw #fafe28, -.4vw 0vw .25vw #fafe28, 
+	-.1vw 0vw .1vw #dbd70d, -.2vw 0vw .1vw #dbd70d, -.4vw 0vw .1vw #dbd70d,
+	-.1vw 0vw .8vw #dbd70d, -.2vw 0vw .8vw #dbd70d, -.4vw 0vw .8vw #dbd70d, .2vw 0vw .5vw #dbd70d,
+	-.1vw 0vw .5vw #dbd70d, -.2vw 0vw .5vw #dbd70d, -.4vw 0vw .5vw #dbd70d, 
+	-.1vw 0vw 10vw #dbd70d, -.2vw 0vw 10vw #dbd70d, -.4vw 0vw 10vw #dbd70d;
+}
+
+.purple-redux {
+	color: #FBB4FF;
+	text-shadow: 
+    -.1vw 0vw .25vw #ef43e7, -.2vw 0vw .25vw #ef43e7, -.4vw 0vw .25vw #ef43e7, 
+    -.1vw 0vw 1vw #ef43e7, -.2vw 0vw .8vw #ef43e7, -.4vw 0vw .8vw #ef43e7, .2vw 0vw .5vw #ef43e7,
+    -.1vw 0vw 10vw #ef43e7, -.2vw 0vw 10vw #ef43e7, -.4vw 0vw 10vw #ef43e7;
+}
+
+.orange-html {
+	color: #FED128;
+	text-shadow: 
+	-.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128, 
+    -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+    -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+}
+
 .blue-neon-wrap {
-	font-size: 3vw;
-	line-height: 3.5vw;
+	font-size: 2.25vw;
+	line-height: 2.55vw;
 	font-family: clipneon;
 	color: #28D7FE;
 	text-shadow: 
@@ -75,22 +101,22 @@ html {
 
 .blue-container {
 	position: absolute;
-	left: 13%;
-	top: 50%;
+	left: 20%;
+	top: 16%;
 }
 
 .blink-a-lot {
-	animation: blinky .1s ease 120;
-	-moz-animation: blinky .1s ease 120;
-	-webkit-animation: blinky .1s ease 120;	
-	-o-animation: blinky .1s ease 120;
+	animation: blinky .1s ease 150;
+	-moz-animation: blinky .1s ease 150;
+	-webkit-animation: blinky .1s ease 150;	
+	-o-animation: blinky .1s ease 150;
 }
 
 .blink-a-little {
-	animation: blinky .15s ease 60;
-	-moz-animation: blinky .15s ease 60;
-	-webkit-animation: blinky .15s ease 60;	
-	-o-animation: blinky .15s ease 60;
+	animation: blinky .15s ease 70;
+	-moz-animation: blinky .15s ease 70;
+	-webkit-animation: blinky .15s ease 70;	
+	-o-animation: blinky .15s ease 70;
 }
 
 .blink-on {
