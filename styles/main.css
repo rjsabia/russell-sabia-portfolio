@@ -21,11 +21,15 @@ html {
 	padding-top: 35vh;
 }
 
+.inline-blinker {
+	display: inline;
+}
+
 .neon-wrap {
     color: #fff;
     font-family: clipneon;
-    font-size: 6vw;
-    line-height: 6vw;
+    font-size: 6.5vw;
+    line-height: 6.5vw;
     text-shadow: 0vw 0vw 3vw #F40A35;
     text-shadow: 
     -.1vw 0vw .25vw #fff, -.2vw 0vw .25vw #fff, -.4vw 0vw .25vw #fff, 
@@ -57,8 +61,8 @@ html {
 }
 
 .blue-neon-wrap {
-	font-size: 2.5vw;
-	line-height: 3vw;
+	font-size: 3vw;
+	line-height: 3.5vw;
 	font-family: clipneon;
 	color: #28D7FE;
 	text-shadow: 
@@ -69,14 +73,34 @@ html {
 	-.1vw 0vw 10vw #1041FF, -.2vw 0vw 10vw #1041FF, -.4vw 0vw 10vw #1041FF;
 }
 
-/*.heart-off {
-	animation: heart .1s ease infinite;
-	-moz-animation: heart .1s ease infinite;
-	-webkit-animation: heart .1s ease infinite;	
-	-o-animation: heart .1s ease infinite;
+.blue-container {
+	position: absolute;
+	left: 13%;
+	top: 50%;
 }
 
-@keyframes heart {
+.blink-a-lot {
+	animation: blinky .1s ease 120;
+	-moz-animation: blinky .1s ease 120;
+	-webkit-animation: blinky .1s ease 120;	
+	-o-animation: blinky .1s ease 120;
+}
+
+.blink-a-little {
+	animation: blinky .15s ease 60;
+	-moz-animation: blinky .15s ease 60;
+	-webkit-animation: blinky .15s ease 60;	
+	-o-animation: blinky .15s ease 60;
+}
+
+.blink-on {
+	animation: blinky .05s ease 30;
+	-moz-animation: blinky .05s ease 30;
+	-webkit-animation: blinky .05s ease 30;	
+	-o-animation: blinky .05s ease 30;
+}
+
+@keyframes blinky {
    0%,
    100% {
      -webkit-transform: translateZ(0);
@@ -84,11 +108,11 @@ html {
      -ms-transform: translateZ(0);
      -o-transform: translateZ(0);
      transform: translateZ(0);
-     color: #FBB4FF;
+     color: #fff;
      text-shadow: 
-   -.1vw 0vw .25vw #FBB4FF, -.2vw 0vw .25vw #FBB4FF, -.4vw 0vw .25vw #FBB4FF, 
-   -.1vw 0vw 1vw #E82FF5, -.2vw 0vw .8vw #E82FF5, -.4vw 0vw .8vw #E82FF5, .2vw 0vw .5vw #E82FF5,
-   -.1vw 0vw 10vw #CB16FA, -.2vw 0vw 10vw #CB16FA, -.4vw 0vw 10vw #CB16FA;
+   -.1vw 0vw .25vw #fff, -.2vw 0vw .25vw #fff, -.4vw 0vw .25vw #fff, 
+   -.1vw 0vw 1vw #FF1177, -.2vw 0vw .8vw #FF1177, -.4vw 0vw .8vw #FF1177, .2vw 0vw .5vw #FF1177,
+   -.1vw 0vw 10vw #FF1177, -.2vw 0vw 10vw #FF1177, -.4vw 0vw 10vw #FF1177;
   }
     50% {
     -webkit-transform: translateZ(0);
@@ -96,13 +120,13 @@ html {
     -ms-transform: translateZ(0);
      -o-transform: translateZ(0);
      transform: translateZ(0);
-     color: #8F5493;
+     color: #704a4d;
      text-shadow: 
-   -.1vw 0vw .25vw #8F5493, -.2vw 0vw .25vw #8F5493, -.4vw 0vw .25vw #8F5493, 
-   -.1vw 0vw .8vw #59125E, -.2vw 0vw .8vw #59125E, -.4vw 0vw .8vw #59125E, .2vw 0vw .5vw #59125E,
-   -.1vw 0vw 3vw #42114E, -.2vw 0vw 3vw #42114E, -.4vw 0vw 3vw #42114E;
+   -.1vw 0vw .25vw #704a4d, -.2vw 0vw .25vw #704a4d, -.4vw 0vw .25vw #704a4d, 
+   -.1vw 0vw .8vw #4d1717, -.2vw 0vw .8vw #4d1717, -.4vw 0vw .8vw #4d1717, .2vw 0vw .5vw #4d1717,
+   -.1vw 0vw 3vw #4d1717, -.2vw 0vw 3vw #4d1717, -.4vw 0vw 3vw #4d1717;
    }
- }*/
+ }
 
 .three-col-grid:after {
 	display: table;
