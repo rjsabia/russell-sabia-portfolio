@@ -106,24 +106,24 @@ html {
 }
 
 .blink-a-lot {
-	animation: blinky .1s ease 150;
-	-moz-animation: blinky .1s ease 150;
-	-webkit-animation: blinky .1s ease 150;	
-	-o-animation: blinky .1s ease 150;
+	animation: blinky .1s ease 220;
+	-moz-animation: blinky .1s ease 220;
+	-webkit-animation: blinky .1s ease 220;	
+	-o-animation: blinky .1s ease 220;
 }
 
 .blink-a-little {
-	animation: blinky .15s ease 70;
-	-moz-animation: blinky .15s ease 70;
-	-webkit-animation: blinky .15s ease 70;	
-	-o-animation: blinky .15s ease 70;
+	animation: blinky .15s ease 75;
+	-moz-animation: blinky .15s ease 75;
+	-webkit-animation: blinky .15s ease 75;	
+	-o-animation: blinky .15s ease 75;
 }
 
 .blink-on {
-	animation: blinky .05s ease 30;
-	-moz-animation: blinky .05s ease 30;
-	-webkit-animation: blinky .05s ease 30;	
-	-o-animation: blinky .05s ease 30;
+	animation: blinky .05s ease 40;
+	-moz-animation: blinky .05s ease 40;
+	-webkit-animation: blinky .05s ease 40;	
+	-o-animation: blinky .05s ease 40;
 }
 
 @keyframes blinky {
@@ -152,25 +152,73 @@ html {
    -.1vw 0vw .8vw #4d1717, -.2vw 0vw .8vw #4d1717, -.4vw 0vw .8vw #4d1717, .2vw 0vw .5vw #4d1717,
    -.1vw 0vw 3vw #4d1717, -.2vw 0vw 3vw #4d1717, -.4vw 0vw 3vw #4d1717;
    }
- }
+}
 
- .intro-wrapper {
- 	font-family: 'Righteous', cursive;
- 	min-height: 40vh;
+.intro-wrapper {
+ 	font-family: 'Droid Serif', serif;
+ 	min-height: 20vw;
  	width: 100%;
- 	background: rgba(126,126,126,0.8);
+ 	background: rgba(126,126,126,0.85);
  	color: white;
- 	font-size: 4vh;
+ 	font-size: 2.25vw;
  	margin-top: 22vh;
  	padding-top: 5vh;
  	padding-left: 5px;
  	padding-right: 5px;
  }
 
+ /*=== Fade In Trigger  ===*/
+.animate {
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+ /*=== FADE IN DELAY ====*/
+.one {
+   -webkit-animation-delay: 2s;
+   -moz-animation-delay: 2s;
+   animation-delay: 2s;
+}
+
+ /*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft {
+   from {
+     opacity: 0;
+     -webkit-transform: translate3d(-100%, 0, 0);
+     transform: translate3d(-100%, 0, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+}
+@keyframes fadeInLeft {
+   from {
+     opacity: 0;
+     -webkit-transform: translate3d(-100%, 0, 0);
+     transform: translate3d(-100%, 0, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+}
+ 
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
  .line-1{
     position: relative;
+    line-height: 6vh;
     top: 50%;  
-    width: 30vw;
     margin: 0 auto;
     border-right: 2px solid rgba(126,126,126,.75);
     font-size: 120%;
@@ -181,32 +229,56 @@ html {
 }
 
 .line-2-wrap {
-	margin-top: 2.5vh;
+	margin-top: 1.5vh;
 }
 
 .line-2{
     position: relative;
-    top: 50%;  
-    width: 138vh;
+    top: 50%; 
+    line-height: 5.25vh;
     margin: 0 auto;
     border-right: 2px solid rgba(126,126,126,.75);
-    /*font-size: 100%;*/
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);   
 }
 
- /* Animation */
+.line-2-span {
+	font-style: italic;
+	color: #fafe28;
+}
+
+.line-3-wrap {
+	margin-top: 1.5vh;
+}
+
+.line-3{
+    position: relative;
+    top: 50%; 
+    line-height: 5.25vh;
+    margin: 0 auto;
+    border-right: 2px solid rgba(126,126,126,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+}
+
+.line-3-span {
+	font-style: italic;
+	color: #28D7FE;
+}
+
 .anim-typewriter{
-	animation: typewriter 4s steps(34) 1s 1 normal both,
+	animation: typewriter 3.5s steps(34) 1s 1 normal both,
 	           blinkTextCursor 500ms steps(34) infinite normal;
-	-webkit-animation-delay: 3s; 
-    animation-delay: 3s;
+	-webkit-animation-delay: 3.7s; 
+    animation-delay: 3.7s;
 	}
 @keyframes typewriter{
    from{width: 0;}
-   to{width: 80vh;}
+   to{width: 90vh;}
 }
 @keyframes blinkTextCursor{
    from{border-right-color: rgba(255,255,255,0);}
@@ -214,23 +286,34 @@ html {
 }
 
 .anim-typewriter-2{
-	animation: typewriter-two 5.5s steps(34) 1s 1 normal both,
-	           blinkTextCursor-two 500ms steps(34) infinite normal;
-	-webkit-animation-delay: 9s; 
-    animation-delay: 9s;
+	animation: typewriter-two 5.5s steps(73) 1s 1 normal both,
+	           blinkTextCursor-two 500ms steps(73) infinite normal;
+	-webkit-animation-delay: 8.2s; 
+    animation-delay: 8.2s;
 	}
 @keyframes typewriter-two{
    from{width: 0;}
-   to{width: 138vh;}
+   to{width: 145vh;}
 }
 @keyframes blinkTextCursor-two{
    from{border-right-color: rgba(255,255,255,0);}
    to{border-right-color: transparent;}
 }
 
-.intro-text {
- 	
- }
+.anim-typewriter-3{
+	animation: typewriter-three 5.75s steps(82) 1s 1 normal both,
+	           blinkTextCursor-three 500ms steps(82) infinite normal;
+	-webkit-animation-delay: 15.2s; 
+    animation-delay: 15.2s;
+	}
+@keyframes typewriter-three{
+   from{width: 0;}
+   to{width: 175vh;}
+}
+@keyframes blinkTextCursor-two{
+   from{border-right-color: rgba(255,255,255,0);}
+   to{border-right-color: transparent;}
+}
 
 .three-col-grid:after {
 	display: table;
