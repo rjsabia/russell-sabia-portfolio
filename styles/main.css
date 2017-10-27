@@ -25,6 +25,21 @@ html {
 	display: inline;
 }
 
+#page-head {
+	filter: brightness(80%);
+	height: 100%;
+	text-align: center;
+	font-family: clipneon;
+	font-size: 25px;
+	background-image: url('../assets/lost-places-1572988_1280.jpg');
+    background-position: center;
+   	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
 .neon-wrap {
     color: #fff;
     font-family: clipneon;
@@ -126,6 +141,24 @@ html {
 	-o-animation: blinky .05s ease 40;
 }
 
+.blink-on-delayed {
+	animation: blinky .05s ease 40;
+	-moz-animation: blinky .05s ease 40;
+	-webkit-animation: blinky .05s ease 40;	
+	-o-animation: blinky .05s ease 40;
+	-webkit-animation-delay: 25s; 
+    animation-delay: 25s;
+}
+
+.blink-on-super-delayed {
+	animation: blinky .04s ease 50;
+	-moz-animation: blinky .04s ease 50;
+	-webkit-animation: blinky .04s ease 50;	
+	-o-animation: blinky .04s ease 50;
+	-webkit-animation-delay: 31s; 
+    animation-delay: 31s;
+}
+
 @keyframes blinky {
    0%,
    100% {
@@ -155,31 +188,48 @@ html {
 }
 
 .intro-wrapper {
- 	font-family: 'Droid Serif', serif;
+ 	/*font-family: 'Droid Serif', serif;*/
+ 	font-family: 'Open Sans', sans-serif;
  	min-height: 20vw;
  	width: 100%;
- 	background: rgba(126,126,126,0.85);
+ 	background: rgba(25,25,25,0.9);
  	color: white;
- 	font-size: 2.25vw;
+ 	font-size: 2vw;
  	margin-top: 22vh;
  	padding-top: 5vh;
- 	padding-left: 5px;
- 	padding-right: 5px;
  }
 
  /*=== Fade In Trigger  ===*/
 .animate {
-	-webkit-animation-duration: 0.75s;
-	animation-duration: 0.75s;
+	-webkit-animation-duration: 0.55s;
+	animation-duration: 0.55s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
  /*=== FADE IN DELAY ====*/
 .one {
-   -webkit-animation-delay: 2s;
-   -moz-animation-delay: 2s;
-   animation-delay: 2s;
+   -webkit-animation-delay: 3s;
+   -moz-animation-delay: 3s;
+   animation-delay: 3s;
+}
+
+.two {
+   -webkit-animation-delay: 3.9s;
+   -moz-animation-delay: 3.9s;
+   animation-delay: 3.9s;
+}
+
+.three {
+   -webkit-animation-delay: 4.5s;
+   -moz-animation-delay: 4.5s;
+   animation-delay: 4.5s;
+}
+
+.four {
+   -webkit-animation-delay: 5s;
+   -moz-animation-delay: 5s;
+   animation-delay: 5s;
 }
 
  /*=== FADE IN LEFT ===*/
@@ -209,6 +259,39 @@ html {
      transform: none;
    }
 }
+
+/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+   from {
+     opacity: 0;
+     -webkit-transform: translate3d(100%, 0, 0);
+     transform: translate3d(100%, 0, 0);
+  }
+ 
+   to {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+}
+@keyframes fadeInRight {
+   from {
+     opacity: 0;
+     -webkit-transform: translate3d(100%, 0, 0);
+     transform: translate3d(100%, 0, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+}
+ 
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
  
 .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
@@ -216,32 +299,26 @@ html {
 }
 
  .line-1{
-    position: relative;
-    line-height: 6vh;
-    top: 50%;  
+    line-height: 6.5vh;
     margin: 0 auto;
-    border-right: 2px solid rgba(126,126,126,.75);
-    font-size: 120%;
+    font-size: 130%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
 }
 
-.line-2-wrap {
-	margin-top: 1.5vh;
+.line-1-span {
+	font-style: bold;
+	font-weight: 400;
 }
 
 .line-2{
-    position: relative;
-    top: 50%; 
     line-height: 5.25vh;
+    font-size: 80%;
     margin: 0 auto;
-    border-right: 2px solid rgba(126,126,126,.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);   
 }
 
 .line-2-span {
@@ -249,28 +326,21 @@ html {
 	color: #fafe28;
 }
 
-.line-3-wrap {
-	margin-top: 1.5vh;
-}
-
 .line-3{
-    position: relative;
-    top: 50%; 
     line-height: 5.25vh;
+    font-size: 80%;
     margin: 0 auto;
-    border-right: 2px solid rgba(126,126,126,.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);   
 }
 
 .line-3-span {
 	font-style: italic;
-	color: #28D7FE;
+	color: #fafe28;
 }
 
-.anim-typewriter{
+/*.anim-typewriter{
 	animation: typewriter 3.5s steps(34) 1s 1 normal both,
 	           blinkTextCursor 500ms steps(34) infinite normal;
 	-webkit-animation-delay: 3.7s; 
@@ -283,9 +353,9 @@ html {
 @keyframes blinkTextCursor{
    from{border-right-color: rgba(255,255,255,0);}
    to{border-right-color: transparent;}
-}
+}*/
 
-.anim-typewriter-2{
+/*.anim-typewriter-2{
 	animation: typewriter-two 5.5s steps(73) 1s 1 normal both,
 	           blinkTextCursor-two 500ms steps(73) infinite normal;
 	-webkit-animation-delay: 8.2s; 
@@ -314,26 +384,32 @@ html {
    from{border-right-color: rgba(255,255,255,0);}
    to{border-right-color: transparent;}
 }
+*/
+
+.dark-content-wrapper {
+	height: 35vw;
+	background-color: #191919;
+}
+
+.light-content-wrapper {
+	height: 35vw;
+	background-color: #fdf9f3;
+}
+
+.footer-wrapper {
+	height: 20vw;
+	background-color: #666666;
+}
+
+.sub-footer {
+	height: 5vw;
+	background-color: #191919;
+}
 
 .three-col-grid:after {
 	display: table;
 	clear: both;
 	content: '';
-}
-
-#page-head {
-	filter: brightness(80%);
-	min-height: 98%;
-	text-align: center;
-	font-family: clipneon;
-	font-size: 25px;
-	background-image: url('../assets/lost-places-1572988_1280.jpg');
-    background-position: center;
-   	background-repeat: no-repeat;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
 }
 
 .grid-wrap {
