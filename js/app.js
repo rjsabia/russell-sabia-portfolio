@@ -1,6 +1,6 @@
 $(document).ready( function() {
 	$(window).bind('scroll', function() {
-	   var distance = 150;
+	   var distance = 50;
 			 if ($(window).scrollTop() > distance) {
 				$('.nav-wrapper').addClass('scrolled');
             	$('header').addClass('scrolled');
@@ -11,4 +11,3 @@ $(document).ready( function() {
 			 }
 	});
 })
-

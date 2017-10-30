@@ -5,9 +5,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
@@ -29,6 +27,9 @@
 							<div class="line-3-wrap animate fadeInRight four">
 								<p class="line-3 anim-typewriter-3">I enjoy working on a <span class="line-3-span animate fadeInUp five">team</span> where I can <span class="line-3-span">learn</span> and <span class="line-3-span">grow</span> while <span class="line-3-span">contributing</span> my skills.</p>
 							</div>
+							<div>
+								<button class="top-work-button animate fadeInRight ten"><a href="#work">Check out my work</a></button>
+							</div>
 							<nav>
 								<div class="nav-wrapper animate fadeInRight five">
 									<div class="nav-item animate fadeInRight six"><a href="#home">Home</a></div>
@@ -47,33 +48,34 @@
 				</div>
 			</div>
 			<section class="content-section">
-				<div class="light-content-wrapper" id="work">
-					<div><h4>Work</h4></div>
+				<div class="about-content-wrapper" id="about">
+					<div><h4>ABOUT</h4></div>
 				</div>
-				<div class="dark-content-wrapper" id="about">
-					<div><h4>About</h4></div>
+				<div class="work-content-wrapper" id="work">
+					<div><h4>WORK</h4></div>
 				</div>
-				<div class="colorful-content-wrapper" id="contact">
-					<div><h4>Contact</h4></div>
+				<div class="contact-content-wrapper" id="contact">
+					<div class="form-wrapper">
+						<div>
+							<h2>CONTACT</h2>
+						</div>
+						<div>
+							<h3 class="contact-sub-header">Want to get in touch?</h3>
+						</div>
+						<form method="POST" action="http://formspree.io/devportfoliorjsabia@gmail.com">
+						  <input class="gotcha-input" type="text" name="_gotcha" />
+						  <input class="form-inputs" type="text" name="name" placeholder="Your name" required />
+						  <input class="form-inputs" type="email" name="email" placeholder="Your email" required />
+						  <textarea class="form-inputs text-area-input" name="message" placeholder="Your message" maxlength="250"></textarea>
+						  <button class="contact-form-button" type="submit">SUBMIT</button>
+						</form>
+					</div>
 				</div>
 			</section>
 			<footer>
 				<div class="footer-wrapper"></div>
-				<div class="sub-footer"></div>
 			</footer>
-			<!-- <div class="grid-wrap">
-			  <ul class="three-col-grid">
-			    <li class="grid-item box-1">Grid item</li>
-			    <li class="grid-item box-2">Grid item</li>
-			    <li class="grid-item box-3">Grid item</li>
-			    <li class="grid-item box-1">Grid item</li>
-			    <li class="grid-item box-2">Grid item</li>
-			    <li class="grid-item box-3">Grid item</li>
-			    <li class="grid-item box-1">Grid item</li>
-			    <li class="grid-item box-2">Grid item</li>
-			    <li class="grid-item box-3">Grid item</li>
-			  </ul>
-			</div> -->
+	
 		</div>
 		<footer id="footer"></footer>
 	</div>
