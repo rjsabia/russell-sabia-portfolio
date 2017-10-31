@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css');
+
 @font-face {
   	font-family: clipneon;
   	src: url('./fonts/Clip.ttf');
@@ -11,6 +13,10 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
 }
 
 .hero-image-control {
@@ -240,33 +246,33 @@ html {
 }
 
 .six {
-   -webkit-animation-delay: 4.75s;
-   -moz-animation-delay: 4.75s;
-   animation-delay: 4.75s;
+   -webkit-animation-delay: 4.65s;
+   -moz-animation-delay: 4.65s;
+   animation-delay: 4.65s;
 }
 
 .seven {
-   -webkit-animation-delay: 5.25s;
-   -moz-animation-delay: 5.25s;
-   animation-delay: 5.25s;
+   -webkit-animation-delay: 5.15s;
+   -moz-animation-delay: 5.15s;
+   animation-delay: 5.15s;
 }
 
 .eight {
-   -webkit-animation-delay: 5.75s;
-   -moz-animation-delay: 5.75s;
-   animation-delay: 5.75s;
+   -webkit-animation-delay: 5.65s;
+   -moz-animation-delay: 5.65s;
+   animation-delay: 5.65s;
 }
 
 .nine {
-   -webkit-animation-delay: 6.25s;
-   -moz-animation-delay: 6.25s;
-   animation-delay: 6.25s;
+   -webkit-animation-delay: 6.15s;
+   -moz-animation-delay: 6.15s;
+   animation-delay: 6.15s;
 }
 
 .ten {
-   -webkit-animation-delay: 7.25s;
-   -moz-animation-delay: 7.25s;
-   animation-delay: 7.25s;
+   -webkit-animation-delay: 3.6s;
+   -moz-animation-delay: 3.6s;
+   animation-delay: 3.6s;
 }
  /*=== FADE IN LEFT ===*/
 @-webkit-keyframes fadeInLeft {
@@ -384,15 +390,23 @@ html {
 	font-size: 20px;
 	padding: 2px;
 	background-color: #191919;
-	color: white;
 	transition: all .25s ease;
+}
+
+.top-work-button a {
+	color: white;
 }
 
 .top-work-button:hover {
 	width: 230px;
 	height: 50px;
 	font-size: 22px;
-	color: #28D7FE;
+	background-color: #28D7FE;
+	border: none;
+}
+
+.top-work-button a:hover {
+	color: #191919;
 }
 
 .nav-wrapper {
@@ -414,14 +428,14 @@ html {
     top: 0;
 }
 
-a {
+.nav-item a {
 	text-decoration: none;
-	color: #c1c1c1;
+	color: #c6c6c6;
 	transition: all .5s ease;
 }
 
 a:hover {
-	color: #28D7FE
+	color: #28D7FE;
 }
 
 .nav-item {
@@ -449,6 +463,7 @@ a:hover {
 	font-size: 30px;
 	line-height: 4vw;
 	height: 45vw;
+	width: 100%;
 	background-color: #f5f5f5;
 	color: #191919;
 }
@@ -514,6 +529,39 @@ a:hover {
 	font-size: 22px;
 	background-color: #28D7FE;
 	border: none;
+}
+
+.carousel-wrap {
+   margin: 50px auto;
+   padding: 0 5%;
+   width: 80%;
+   position: relative;
+   color: black;
+}
+
+.owl-carousel .item {
+   position: relative;
+   z-index: 100; 
+   -webkit-backface-visibility: hidden; 
+}
+
+.owl-nav > div {
+   margin-top: -26px;
+   position: absolute;
+   top: 50%;
+   color: #cdcdcd;
+}
+
+.owl-nav i {
+   font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+   left: -70px;
+}
+
+.owl-nav .owl-next {
+   right: -70px;
 }
 
 .footer-wrapper {
