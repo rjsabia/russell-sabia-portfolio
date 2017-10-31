@@ -270,9 +270,9 @@ a {
 }
 
 .ten {
-   -webkit-animation-delay: 3.6s;
-   -moz-animation-delay: 3.6s;
-   animation-delay: 3.6s;
+   -webkit-animation-delay: 6.6s;
+   -moz-animation-delay: 6.6s;
+   animation-delay: 6.6s;
 }
  /*=== FADE IN LEFT ===*/
 @-webkit-keyframes fadeInLeft {
@@ -414,6 +414,7 @@ a {
 	display: inline-flex;
 	position: fixed;
 	top: auto;
+	z-index: 10000;
   	bottom: 0;
   	left: 0;
   	width: 100%;
@@ -529,6 +530,10 @@ a:hover {
 	font-size: 22px;
 	background-color: #28D7FE;
 	border: none;
+}
+.caro-pics {
+	width: 300px;
+	height: 310px;
 }
 
 .carousel-wrap {
