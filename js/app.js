@@ -1,7 +1,7 @@
 $(document).ready( function() {
 	$('.owl-carousel').owlCarousel({
 	  loop: true,
-	  margin: 15,
+	  margin: 20,
 	  nav: true,
 	  autoplay: true,
 	  autoplayHoverPause: true,
@@ -13,10 +13,10 @@ $(document).ready( function() {
 	    0: {
 	      items: 1
 	    },
-	    800: {
+	    1000: {
 	      items: 2
 	    },
-	    1000: {
+	    1100: {
 	      items: 3
 	    }
 	  }
