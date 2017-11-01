@@ -208,8 +208,8 @@ a {
 
  /*=== Fade In Trigger  ===*/
 .animate {
-	-webkit-animation-duration: 0.55s;
-	animation-duration: 0.55s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -222,57 +222,33 @@ a {
 }
 
 .two {
-   -webkit-animation-delay: 1.9s;
-   -moz-animation-delay: 1.9s;
-   animation-delay: 1.9s;
+   -webkit-animation-delay: 1.5s;
+   -moz-animation-delay: 1.5s;
+   animation-delay: 1.5s;
 }
 
 .three {
+   -webkit-animation-delay: 2s;
+   -moz-animation-delay: 2s;
+   animation-delay: 2s;
+}
+
+.four {
    -webkit-animation-delay: 2.5s;
    -moz-animation-delay: 2.5s;
    animation-delay: 2.5s;
 }
 
-.four {
+.five {
    -webkit-animation-delay: 3s;
    -moz-animation-delay: 3s;
    animation-delay: 3s;
 }
 
-.five {
-   -webkit-animation-delay: 3.75s;
-   -moz-animation-delay: 3.75s;
-   animation-delay: 3.75s;
-}
-
 .six {
-   -webkit-animation-delay: 4.65s;
-   -moz-animation-delay: 4.65s;
-   animation-delay: 4.65s;
-}
-
-.seven {
-   -webkit-animation-delay: 5.15s;
-   -moz-animation-delay: 5.15s;
-   animation-delay: 5.15s;
-}
-
-.eight {
-   -webkit-animation-delay: 5.65s;
-   -moz-animation-delay: 5.65s;
-   animation-delay: 5.65s;
-}
-
-.nine {
-   -webkit-animation-delay: 6.15s;
-   -moz-animation-delay: 6.15s;
-   animation-delay: 6.15s;
-}
-
-.ten {
-   -webkit-animation-delay: 6.6s;
-   -moz-animation-delay: 6.6s;
-   animation-delay: 6.6s;
+   -webkit-animation-delay: 3.65s;
+   -moz-animation-delay: 3.65s;
+   animation-delay: 3.65s;
 }
  /*=== FADE IN LEFT ===*/
 @-webkit-keyframes fadeInLeft {
@@ -340,7 +316,7 @@ a {
     animation-name: fadeInLeft;
 }
 
- .line-1{
+.line-1{
     line-height: 7vh;
     margin: 0 auto;
     font-size: 150%;
@@ -406,7 +382,7 @@ a {
 }
 
 .top-work-button a:hover {
-	color: #191919;
+	color: white;
 }
 
 .nav-wrapper {
@@ -463,7 +439,7 @@ a:hover {
 	padding-top: 4.5vw;
 	font-size: 30px;
 	line-height: 4vw;
-	height: 45vw;
+	height: 50vw;
 	width: 100%;
 	background-color: #f5f5f5;
 	color: #191919;
@@ -471,7 +447,7 @@ a:hover {
 
 .contact-content-wrapper {
 	font-family: 'Raleway', sans-serif;
-	height: 45vw;
+	height: 48vw;
 	background-color: #191919;
 	color: #c1c1c1;
 	padding-top: 4.5vw;
@@ -534,6 +510,7 @@ a:hover {
 .caro-pics {
 	width: 300px;
 	height: 310px;
+	border-radius: 2px;
 }
 
 .carousel-wrap {
@@ -542,6 +519,12 @@ a:hover {
    width: 80%;
    position: relative;
    color: black;
+}
+
+.item {
+   -webkit-box-shadow: 0 10px 6px -6px #777;
+   -moz-box-shadow: 0 10px 6px -6px #777;
+   box-shadow: 0 10px 6px -6px #777;
 }
 
 .owl-carousel .item {
@@ -557,8 +540,8 @@ a:hover {
    color: #cdcdcd;
 }
 
-.owl-nav i {
-   font-size: 52px;
+.owl-nav {
+   font-size: 20px;
 }
 
 .owl-nav .owl-prev {
@@ -568,6 +551,47 @@ a:hover {
 .owl-nav .owl-next {
    right: -70px;
 }
+
+/*div#carousel { 
+  perspective: 1000px; 
+  font-size:0; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 320px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+  margin: 0 auto 0 auto;
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  /*outline:1px solid transparent;
+}
+/*figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: black; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative;
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+*/
 
 .footer-wrapper {
 	height: 12vw;
