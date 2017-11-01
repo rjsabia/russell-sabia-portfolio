@@ -15,6 +15,10 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	background-color: #666666;
+}
+
 a {
 	text-decoration: none;
 }
@@ -264,6 +268,7 @@ a {
      transform: none;
    }
 }
+
 @keyframes fadeInLeft {
    from {
      opacity: 0;
@@ -292,6 +297,7 @@ a {
      transform: none;
    }
 }
+
 @keyframes fadeInRight {
    from {
      opacity: 0;
@@ -439,7 +445,7 @@ a:hover {
 	padding-top: 4.5vw;
 	font-size: 30px;
 	line-height: 4vw;
-	height: 50vw;
+	height: 46vw;
 	width: 100%;
 	background-color: #f5f5f5;
 	color: #191919;
@@ -447,12 +453,14 @@ a:hover {
 
 .contact-content-wrapper {
 	font-family: 'Raleway', sans-serif;
-	height: 48vw;
+	height: 46vw;
 	background-color: #191919;
 	color: #c1c1c1;
 	padding-top: 4.5vw;
 	font-size: 30px;
 	line-height: 4vw;
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
 .contact-sub-header {
@@ -514,11 +522,11 @@ a:hover {
 }
 
 .carousel-wrap {
-   margin: 50px auto;
-   padding: 0 5%;
-   width: 80%;
-   position: relative;
-   color: black;
+    margin: 50px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+    color: black;
 }
 
 .item {
@@ -541,15 +549,25 @@ a:hover {
 }
 
 .owl-nav {
-   font-size: 20px;
+   font-size: 45px;
 }
 
 .owl-nav .owl-prev {
-   left: -70px;
+   left: -45px;
+   color: #191919;
+}
+
+.owl-nav .owl-prev:hover {
+	color: #28D7FE;
 }
 
 .owl-nav .owl-next {
-   right: -70px;
+   right: -45px;
+   color: #191919;
+}
+
+.owl-nav .owl-next:hover {
+	color: #28D7FE;
 }
 
 /*div#carousel { 
@@ -594,6 +612,29 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 */
 
 .footer-wrapper {
-	height: 12vw;
+	padding-top: 2vw;
+	height: 10vw;
 	background-color: #666666;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	width: 100%;
+}
+
+.footer-wrapper h2 {
+	margin-bottom: 1vw;
+	color: #28D7FE;
+}
+
+.footer-icon {
+	display: inline-flex;
+}
+
+.footer-icon-each {
+	padding-right: 1vw;
+}
+
+.social-links {
+	color: #191919;
 }
