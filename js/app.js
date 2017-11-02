@@ -13,7 +13,7 @@ $(document).ready( function() {
 	    0: {
 	      items: 1
 	    },
-	    1000: {
+	    640: {
 	      items: 2
 	    },
 	    1100: {
@@ -21,22 +21,4 @@ $(document).ready( function() {
 	    }
 	  }
 	})
-	$(window).bind('scroll', function() {
-	   var distance = 60;
-			 if ($(window).scrollTop() > distance) {
-				$('.nav-wrapper').addClass('scrolled');
-            	$('header').addClass('scrolled');
-			 }
-			 else {
-				$('.nav-wrapper').removeClass('scrolled');
-            	$('header').removeClass('scrolled');
-			 }
-	});
 })
-
-//  var angle = 0;
-// function galleryspin(sign) { 
-// spinner = document.querySelector("#spinner");
-// if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
-// spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
-// }

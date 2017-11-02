@@ -17,6 +17,7 @@ html {
 
 body {
 	background-color: #666666;
+  z-index: 0;
 }
 
 a {
@@ -248,12 +249,6 @@ a {
    -moz-animation-delay: 3s;
    animation-delay: 3s;
 }
-
-.six {
-   -webkit-animation-delay: 3.65s;
-   -moz-animation-delay: 3.65s;
-   animation-delay: 3.65s;
-}
  /*=== FADE IN LEFT ===*/
 @-webkit-keyframes fadeInLeft {
    from {
@@ -396,7 +391,7 @@ a {
 	display: inline-flex;
 	position: fixed;
 	top: auto;
-	z-index: 99;
+	z-index: 1;
   	bottom: 0;
   	left: 0;
   	width: 100%;
@@ -446,14 +441,18 @@ a:hover {
 
 .about-icon-container {
   height: 50px;
-  width: 50px;
+  width: 65px;
   margin: 0 auto 8px auto;
   color: #28D7FE;
 }
 
-.about-icon-container img {
+/*.about-icon-container img {
   height: auto;
   width: 100%;
+}*/
+
+.row-head {
+  margin-top: 1.25vw;
 }
 
 .about-sub-head {
@@ -506,7 +505,7 @@ a:hover {
 
 @media only screen and (max-width: 846px) {
     .about-content-wrapper {
-        height: 90vw;
+        height: 95vw;
     }
 
     .row-item {
@@ -514,11 +513,17 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 740px) {
-    .row-item  {
-        width: 95%;
+@media only screen and (max-width: 790px) {
+    .about-content-wrapper {
+        height: 100vw;
     }
 
+    .row-item {
+      width: 75%;
+    }
+}
+
+@media only screen and (max-width: 745px) {
     .row-item h4 {
     	font-size: 20px;
     }
@@ -528,7 +533,7 @@ a:hover {
     }
 
     .about-content-wrapper {
-    	height: 80vw;
+    	height: 110vw;
     }
 
     .about-header {
@@ -536,11 +541,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 609px) {
-    .row-item  {
-        width: 98%;
-    }
-
+@media only screen and (max-width: 675px) {
     .row-item h4 {
     	font-size: 20px;
     }
@@ -550,11 +551,11 @@ a:hover {
     }
 
     .about-content-wrapper {
-    	height: 90vw;
+    	height: 130vw;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 595px) {
     .row-item h4 {
     	font-size: 19px;
     }
@@ -564,21 +565,19 @@ a:hover {
     }
 
     .about-content-wrapper {
-    	height: 105vw;
+    	height: 145vw;
     }
 }
 
-@media only screen and (max-width: 475px) {
-    .row-item h4 {
-    	font-size: 18px;
-    }
-
-    .row-item p {
-    	font-size: 14px;
-    }
-
+@media only screen and (max-width: 525px) {
     .about-content-wrapper {
-    	height: 125vw;
+      height: 160vw;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .about-content-wrapper {
+    	height: 175vw;
     }
 
     .about-header {
@@ -586,37 +585,33 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 415px) {
-    .row-item h4 {
-    	font-size: 17px;
-    }
-
+@media only screen and (max-width: 456px) {
     .about-content-wrapper {
-    	height: 145vw;
+      height: 185vw;
     }
 
-    .about-header {
-    	margin-bottom: 16px;
+    .row-head {
+      margin-top: 3vw;
     }
-
-    .about-sub-head {
-		font-size: 18px;
-	}
 }
 
-/*@media only screen and (max-width: 390px) {
-    .row-item h4 {
-    	font-size: 16px;
-    }
-
+@media only screen and (max-width: 435px) {
     .about-content-wrapper {
-    	height: 165vw;
+    	height: 205vw;
     }
+}
 
-    .about-sub-head {
-		font-size: 17px;
-	}
-}*/
+@media only screen and (max-width: 418px) {
+    .about-content-wrapper {
+      height: 225vw;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .about-content-wrapper {
+      height: 240vw;
+    }
+}
 
 .work-content-wrapper {
 	font-family: 'Raleway', sans-serif;
@@ -629,10 +624,52 @@ a:hover {
 	color: #191919;
 }
 
+@media only screen and (max-width: 1172px) {
+    .work-content-wrapper {
+      height: 58vw;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .work-content-wrapper {
+      height: 68vw;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .work-content-wrapper {
+      height: 85vw;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .work-content-wrapper {
+      height: 94vw;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .work-content-wrapper {
+      height: 100vw;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .work-content-wrapper {
+      height: 105vw;
+    }
+}
+
 .work-sub-head {
 	font-size: 20px;
 	line-height: 21px;
 	margin-top: 10px;
+}
+
+@media only screen and (max-width: 590px) {
+    .work-sub-head {
+      font-size: 18px;
+    }
 }
 
 .contact-content-wrapper {
@@ -647,9 +684,58 @@ a:hover {
 	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
+@media only screen and (max-width: 1250px) {
+    .contact-content-wrapper {
+      height: 61vw;
+    }
+}
+
+@media only screen and (max-width: 751px) {
+    .contact-content-wrapper {
+      height: 74vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .contact-content-wrapper {
+      height: 84vw;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .contact-content-wrapper {
+      height: 94vw;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .contact-content-wrapper {
+      height: 110vw;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .contact-content-wrapper {
+      height: 135vw;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .contact-content-wrapper {
+      height: 145vw;
+    }
+}
+
 .contact-sub-header {
 	font-size: 20px;
 	color: #28D7FE;
+}
+
+@media only screen and (max-width: 830px) {
+    .contact-sub-header {
+      margin-bottom: 13px;
+      margin-top: 13px;
+    }
 }
 
 .form-wrapper {
@@ -665,17 +751,53 @@ a:hover {
 	margin: 1vw auto 0 auto;
 	background-color: #666666;
 	color: #c1c1c1;
-	min-height: 35px;
-	min-width: 450px;
+	height: 35px;
+	width: 450px;
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
-	border-radius: 2px;
 	border: none;
 	padding: 4px;
 }
 
 .text-area-input {
-	min-height: 150px;
+  min-height: 150px;
+}
+
+@media only screen and (max-width: 830px) {
+    .form-inputs {
+      width: 400px
+      font-size: 22px;
+      height: 30px;
+    }
+
+    .text-area-input {
+      width: 400px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .form-inputs {
+      width: 320px
+      font-size: 15px;
+      height: 28px;
+      padding: 0px;
+    }
+
+    .text-area-input {
+      width: 320px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-inputs {
+      width: 290px
+      font-size: 12px;
+      height: 25px;
+    }
+
+    .text-area-input {
+      width: 290px;
+    }
 }
 
 .contact-form-button {
@@ -702,7 +824,60 @@ a:hover {
 .caro-pics {
 	width: 300px;
 	height: 310px;
-	border-radius: 2px;
+}
+
+@media only screen and (max-width: 945px) {
+    .caro-pics {
+      height: 290px;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .caro-pics {
+      height: 275px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .caro-pics {
+      height: 250px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .caro-pics {
+      height: 230px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .caro-pics {
+      height: 210px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .caro-pics {
+      height: 310px;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .caro-pics {
+      height: 290px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .caro-pics {
+      height: 260px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .caro-pics {
+      height: 220px;
+    }
 }
 
 .carousel-wrap {
@@ -715,15 +890,25 @@ a:hover {
 
 .owl-carousel .item {
    position: relative;
-   z-index: 100;
    -webkit-backface-visibility: hidden; 
 }
 
 .explain-work {
-   font-size: 18px;
+   font-size: 16px;
    color: white;
-   background-color: black;
-   border-radius: 2px;
+   background-color: #28D7FE;
+}
+
+@media only screen and (max-width: 755px) {
+    .explain-work {
+      font-size: 13.5px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .explain-work {
+      font-size: 14px;
+    }
 }
 
 .owl-nav > div {
