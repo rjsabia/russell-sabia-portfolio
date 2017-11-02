@@ -440,6 +440,22 @@ a:hover {
 	color: #191919;
 }
 
+.inner-about-item {
+  display: block;
+}
+
+.about-icon-container {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 8px auto;
+  color: #28D7FE;
+}
+
+.about-icon-container img {
+  height: auto;
+  width: 100%;
+}
+
 .about-sub-head {
 	font-size: 20px;
 	color: #28D7FE;
@@ -466,21 +482,35 @@ a:hover {
 	display: inline-flex;
 	float: left;
 	text-align: center;
-	/*background-color: pink;
-	border: 2px solid black;*/
 	padding: 9px;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 1080px) {
+    .about-content-wrapper {
+        height: 52vw;
+    }
+}
+
+@media only screen and (max-width: 910px) {
     .row-item {
         display: block;
         float: none;
-        width: 90%;
+        width: 85%;
         margin: 0 auto 0 auto;
     }
 
     .about-content-wrapper {
-    	height: 70vw;
+    	  height: 85vw;
+    }
+}
+
+@media only screen and (max-width: 846px) {
+    .about-content-wrapper {
+        height: 90vw;
+    }
+
+    .row-item {
+      width: 80%;
     }
 }
 
@@ -587,21 +617,6 @@ a:hover {
 		font-size: 17px;
 	}
 }*/
-
-.inner-about-item {
-	display: block;
-}
-
-.about-icon-container {
-	width: 150px;
-	height: 170px;
-	margin: 20px auto 0 auto;
-}
-
-.about-icon-container img {
-	height: auto;
-	width: 100%;
-}
 
 .work-content-wrapper {
 	font-family: 'Raleway', sans-serif;
