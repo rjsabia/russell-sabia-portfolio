@@ -751,8 +751,10 @@ a:hover {
 	margin: 1vw auto 0 auto;
 	background-color: #666666;
 	color: #c1c1c1;
-	height: 35px;
-	width: 450px;
+	/*height: 35px;
+	width: 450px;*/
+  height: 3vw;
+  width: 32vw;
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
 	border: none;
@@ -763,40 +765,42 @@ a:hover {
   min-height: 150px;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 905px) {
     .form-inputs {
-      width: 400px
-      font-size: 22px;
-      height: 30px;
-    }
-
-    .text-area-input {
-      width: 400px;
+      width: 45vw;
+      height: 4vw;
+      font-size: 21px;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 700px) {
     .form-inputs {
-      width: 320px
+      font-size:16;
+      height: 5vw;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .form-inputs {
+      width: 55vw;
+      height: 5.5vw;
       font-size: 15px;
-      height: 28px;
-      padding: 0px;
-    }
-
-    .text-area-input {
-      width: 320px;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 510px) {
     .form-inputs {
-      width: 290px
-      font-size: 12px;
-      height: 25px;
+      width: 65vw;
+      height: 6.5vw;
+      font-size: 14px;
     }
+}
 
-    .text-area-input {
-      width: 290px;
+@media only screen and (max-width: 450px) {
+    .form-inputs {
+      width: 75vw;
+      height: 7.5vw;
+      font-size: 14px;
     }
 }
 
@@ -812,6 +816,18 @@ a:hover {
 	background-color: #191919;
 	color: #fdf9f3;
 	transition: all .5s ease;
+}
+
+@media only screen and (max-width: 765px) {
+    .contact-form-button {
+      margin-top: 4vw;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .contact-form-button {
+      margin-top: 6vw;
+    }
 }
 
 .contact-form-button:hover {
@@ -952,16 +968,29 @@ a:hover {
 }
 
 .footer-wrapper h2 {
-   margin-bottom: 1vw;
+   margin-bottom: 1.5vw;
    color: #28D7FE;
 }
 
 .footer-icon {
    display: inline-flex;
+   margin: 0 auto 0 auto;
 }
 
-.footer-icon-each {
-   padding-right: 1vw;
+.github-icon {
+  padding-right: 2vw;
+}
+
+@media only screen and (max-width: 780px) {
+    .github-icon {
+      padding-right: 4vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .github-icon {
+      padding-right: 6vw;
+    }
 }
 
 .social-links {
