@@ -69,6 +69,12 @@ a {
     }
 }
 
+@media only screen and (max-width: 425px) {
+    #page-head {
+      height: 85vw;
+    }
+}
+
 .neon-wrap {
     color: #fff;
     font-family: clipneon;
@@ -255,6 +261,12 @@ a {
         font-size: 3.25vw;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .intro-wrapper {
+        top: 22vw;
+    }
+}
  /*=== Fade In Trigger  ===*/
 .animate {
    -webkit-animation-duration: 0.5s;
@@ -422,6 +434,18 @@ a {
   }
     .line-3 {
       line-height: 2.75vh;
+    }
+}
+
+@media only screen and (max-height: 575px) {
+    .line-1 {
+      line-height: 10vh;
+    }
+    .line-2 {
+      line-height: 8vh;
+  }
+    .line-3 {
+      line-height: 8vh;
     }
 }
 
