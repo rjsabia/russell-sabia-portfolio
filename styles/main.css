@@ -57,6 +57,115 @@ a {
   background-size: cover;
 }
 
+.hide-mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1135px) {
+    .hide-mobile-menu {
+      display: block;
+    }
+}
+
+/*testing slideout menu concept*/
+/* -- Slideout Sidebar -- */
+
+.fa-bars {
+  margin-left: 2vw;
+  color: #28D7FE;
+  text-shadow: 
+    -.1vw 0vw .25vw #28D7FE, -.2vw 0vw .25vw #28D7FE, -.4vw 0vw .25vw #28D7FE, 
+  -.1vw 0vw .1vw #1041FF, -.2vw 0vw .1vw #1041FF, -.4vw 0vw .1vw #1041FF,
+  -.1vw 0vw .8vw #1041FF, -.2vw 0vw .8vw #1041FF, -.4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  -.1vw 0vw .5vw #1041FF, -.2vw 0vw .5vw #1041FF, -.4vw 0vw .5vw #1041FF, 
+  -.1vw 0vw 10vw #1041FF, -.2vw 0vw 10vw #1041FF, -.4vw 0vw 10vw #1041FF;
+}
+
+@media only screen and (max-width: 895px) {
+    .fa-bars {
+      margin-left: 0vw;
+    }
+}
+
+.slideout-sidebar {
+  position: fixed;
+  top: 0;
+  left: -205px;
+  z-index: 1;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  background-color: #212121;
+  transition: all 300ms ease-in-out;
+}
+
+.slideout-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideout-sidebar ul li {
+  cursor: pointer;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(244,244,244,0.4);
+  color: #fff;
+  text-shadow: 
+    -.1vw 0vw .25vw #28D7FE, -.2vw 0vw .25vw #28D7FE, -.4vw 0vw .25vw #28D7FE, 
+  -.1vw 0vw .1vw #1041FF, -.2vw 0vw .1vw #1041FF, -.4vw 0vw .1vw #1041FF,
+  -.1vw 0vw .8vw #1041FF, -.2vw 0vw .8vw #1041FF, -.4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  -.1vw 0vw .5vw #1041FF, -.2vw 0vw .5vw #1041FF, -.4vw 0vw .5vw #1041FF, 
+  -.1vw 0vw 10vw #1041FF, -.2vw 0vw 10vw #1041FF, -.4vw 0vw 10vw #1041FF;
+}
+
+.slideout-sidebar ul li:last-child {
+  border-bottom: 0;
+}
+
+.slideout-sidebar ul li:hover {
+  color: #fff;
+  text-shadow: 0vw 0vw 3vw #F40A35;
+    text-shadow: 
+    -.1vw 0vw .25vw #fff, -.2vw 0vw .25vw #fff, -.4vw 0vw .25vw #fff, 
+    -.1vw 0vw .1vw #FF1177, -.2vw 0vw .1vw #FF1177, -.4vw 0vw .1vw #FF1177,
+    -.1vw 0vw .8vw #FF1177, -.2vw 0vw .8vw #FF1177, -.4vw 0vw .8vw #FF1177, .2vw 0vw .5vw #FF1177,
+    -.1vw 0vw .5vw #FF1177, -.2vw 0vw .5vw #FF1177, -.4vw 0vw .5vw #FF1177, 
+    -.1vw 0vw 10vw #FF1177, -.2vw 0vw 10vw #FF1177, -.4vw 0vw 10vw #FF1177;
+}
+/* -- Menu Icon -- */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  font-size: 26px;
+
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+}
+
+@media only screen and (max-width: 750px) {
+    .menu-icon {
+      top: 8px;
+      left: 8px;
+    }
+}
+/*-- The Magic --*/
+#menu-toggle:checked ~ .slideout-sidebar {
+  left: 0px;
+}
+
+#menu-toggle:checked + .menu-icon {
+  left: 220px;
+}
+
+#menu-toggle:checked ~ .content-container {
+  padding-left: 200px;
+}
+
 .nav-wrapper {
   font-family: 'Raleway', sans-serif;
   display: inline-flex;
@@ -69,15 +178,58 @@ a {
   font-size: 1.5vw;
   padding: 1vw 10vw 1vw 5vw;
   background-color: #4C4C4C;
-  color: white;
   transition: top 2s ease;
+}
+
+@media only screen and (max-width: 1345px) {
+    .nav-wrapper {
+      bottom: 2vw;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .nav-wrapper {
+      bottom: 5vw;
+    }
+}
+
+@media only screen and (max-width: 1274px) {
+    .nav-wrapper {
+      bottom: 7vw;
+    }
+}
+
+@media only screen and (max-width: 1195px) {
+    .nav-wrapper {
+      bottom: 10vw;
+    }
 }
 
 .nav-item a {
   text-decoration: none;
   color: #c6c6c6;
   margin-right: 8px;
+  padding: 5px;
+  font-weight: 600;
   transition: all .5s ease;
+  color: #fff;
+  text-shadow: 
+    -.1vw 0vw .25vw #28D7FE, -.2vw 0vw .25vw #28D7FE, -.4vw 0vw .25vw #28D7FE, 
+  -.1vw 0vw .1vw #1041FF, -.2vw 0vw .1vw #1041FF, -.4vw 0vw .1vw #1041FF,
+  -.1vw 0vw .8vw #1041FF, -.2vw 0vw .8vw #1041FF, -.4vw 0vw .8vw #1041FF, .2vw 0vw .5vw #1041FF,
+  -.1vw 0vw .5vw #1041FF, -.2vw 0vw .5vw #1041FF, -.4vw 0vw .5vw #1041FF, 
+  -.1vw 0vw 10vw #1041FF, -.2vw 0vw 10vw #1041FF, -.4vw 0vw 10vw #1041FF;
+}
+
+.nav-item a:hover {
+  color: #fff;
+  text-shadow: 0vw 0vw 3vw #F40A35;
+    text-shadow: 
+    -.1vw 0vw .25vw #fff, -.2vw 0vw .25vw #fff, -.4vw 0vw .25vw #fff, 
+    -.1vw 0vw .1vw #FF1177, -.2vw 0vw .1vw #FF1177, -.4vw 0vw .1vw #FF1177,
+    -.1vw 0vw .8vw #FF1177, -.2vw 0vw .8vw #FF1177, -.4vw 0vw .8vw #FF1177, .2vw 0vw .5vw #FF1177,
+    -.1vw 0vw .5vw #FF1177, -.2vw 0vw .5vw #FF1177, -.4vw 0vw .5vw #FF1177, 
+    -.1vw 0vw 10vw #FF1177, -.2vw 0vw 10vw #FF1177, -.4vw 0vw 10vw #FF1177;
 }
 
 .last-nav-item a {
@@ -88,10 +240,10 @@ a {
   top: 0;
 }
 
-.nav-wrapper a {
-  text-decoration: none;
-  color: red;
-  padding: 5px;
+@media only screen and (max-width: 1135px) {
+    .nav-wrapper {
+      display: none;
+    }
 }
 
 @media only screen and (max-width: 775px) {
@@ -133,10 +285,29 @@ a {
     }
 }
 
+@media only screen and (max-width: 745px) {
+    .neon-wrap {
+        position: relative;
+        top: 4.5vw;
+    }
+}
+
 @media only screen and (max-width: 658px) {
     .neon-wrap {
         font-size: 7.5vw;
         line-height: 7.5vw;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .neon-wrap {
+        top: 8vw;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .neon-wrap {
+        top: 11vw;
     }
 }
 
@@ -279,16 +450,28 @@ a {
     }
 }
 
+@media only screen and (max-width: 745px) {
+    .intro-wrapper {
+        top: 18vw;
+        min-height: 37vw;
+    }
+}
+
 @media only screen and (max-width: 658px) {
     .intro-wrapper {
-        top: 14vw;
+        top: 19vw;
         min-height: 37vw;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .intro-wrapper {
+        top: 21vw;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .intro-wrapper {
-        top: 15vw;
         height: 40vw;
     }
 }
@@ -296,6 +479,12 @@ a {
 @media only screen and (max-width: 535px) {
     .intro-wrapper {
         font-size: 3.25vw;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .intro-wrapper {
+        top: 24vw;
     }
 }
 
@@ -1114,3 +1303,33 @@ a:hover {
 .social-links {
    color: #191919;
 }
+
+
+.slideout-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 256px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        display: none;
+      }
+
+      .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+      }
+
+      .slideout-open,
+      .slideout-open body,
+      .slideout-open .slideout-panel {
+        overflow: hidden;
+      }
+
+      .slideout-open .slideout-menu {
+        display: block;
+      }
