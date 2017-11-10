@@ -20,6 +20,10 @@ body {
   z-index: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 a {
 	text-decoration: none;
 }
@@ -174,8 +178,8 @@ a {
 }
 
 #menu-toggle:checked + .menu-icon {
-  left: 220px;
   position: fixed;
+  left: 220px;
   background: rgba(25,25,25,1);
   padding: 15px;
   border-radius: 5px 20px 5px;
@@ -199,8 +203,8 @@ a {
 }
 
 .menu-icon.scrolled:checked {
-  left: 220px;
   position: fixed;
+  left: 220px;
 }
 
 .neon-wrap {
