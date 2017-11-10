@@ -56,6 +56,30 @@ a {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@media only screen and (max-width: 675px) {
+    #page-head {
+      height: 55vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #page-head {
+      height: 60vw;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    #page-head {
+      height: 65vw;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    #page-head {
+      height: 70vw;
+    }
+}
 /* -- Slideout Sidebar -- */
 
 .fa-bars {
@@ -211,15 +235,15 @@ a {
     }
 }
 
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 505px) {
     .neon-wrap {
-        top: 8vw;
+        top: 9vw;
     }
 }
 
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 405px) {
     .neon-wrap {
-        top: 11vw;
+        top: 10vw;
     }
 }
 
@@ -364,27 +388,21 @@ a {
 
 @media only screen and (max-width: 745px) {
     .intro-wrapper {
-        top: 18vw;
+        top: 17vw;
         min-height: 37vw;
     }
 }
 
-@media only screen and (max-width: 658px) {
+@media only screen and (max-width: 675px) {
     .intro-wrapper {
-        top: 19vw;
-        min-height: 37vw;
+        top: 18vw;
+        min-height: 33vw;
     }
 }
 
 @media only screen and (max-width: 645px) {
     .intro-wrapper {
-        top: 21vw;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .intro-wrapper {
-        height: 40vw;
+        top: 20vw;
     }
 }
 
@@ -403,6 +421,7 @@ a {
 @media only screen and (max-width: 425px) {
     .intro-wrapper {
         top: 22vw;
+        height: 31vw;
     }
 }
  /*=== Fade In Trigger  ===*/
