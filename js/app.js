@@ -24,11 +24,11 @@ $(document).ready( function() {
 	$(window).bind('scroll', function() {
 	   var distance = 40;
 			 if ($(window).scrollTop() > distance) {
-				$('.nav-wrapper').addClass('scrolled');
+				$('.menu-icon').addClass('scrolled');
             	$('header').addClass('scrolled');
 			 }
 			 else {
-				$('.nav-wrapper').removeClass('scrolled');
+				$('.menu-icon').removeClass('scrolled');
             	$('header').removeClass('scrolled');
 			 }
 	});
