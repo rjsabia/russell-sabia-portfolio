@@ -834,8 +834,8 @@ a:hover {
 }
 
 .work-content-wrapper {
-  position: relative;
-  z-index: -1000;
+  /*position: relative;
+  z-index: -1000;*/
 	font-family: 'Raleway', sans-serif;
 	padding-top: 4.5vw;
 	font-size: 30px;
@@ -895,8 +895,8 @@ a:hover {
 }
 
 .contact-content-wrapper {
-  position: relative;
-  z-index: -1000;
+  /*position: relative;
+  z-index: -1000;*/
 	font-family: 'Raleway', sans-serif;
 	height: 46vw;
 	background-color: #191919;
