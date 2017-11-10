@@ -22,7 +22,7 @@ $(document).ready( function() {
 	  }
 	})
 	$(window).bind('scroll', function() {
-	   var distance = 40;
+	   var distance = 20;
 			 if ($(window).scrollTop() > distance) {
 				$('.menu-icon').addClass('scrolled');
             	$('header').addClass('scrolled');
