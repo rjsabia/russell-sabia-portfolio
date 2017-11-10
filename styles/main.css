@@ -624,7 +624,8 @@ a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	padding: 2px;
-	background-color: #191919;
+	background: rgba(25,25,25,1);
+  color: white;
 	transition: all .25s ease;
 }
 
