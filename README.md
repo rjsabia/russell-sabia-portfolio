@@ -45,6 +45,7 @@ Am I open to new opportunities?
 ================================
 
 How can I say this professionally, HECK YEAH!!!
+------------------------------------------------
 
 My journey as a developer was only made possible thanks to 
 having great coding mentors, going to an awesome full-stack 
@@ -59,7 +60,6 @@ Shout out to Thinkful for the great mentors and year of awesome coding!!!
 ![](./assets/thinkful_screenshot.png?cropResize=300,200)
 
 [Thinkful Link (not trying to promote, just incase your interested)](https://www.thinkful.com/)
----------------------------------------------------------------------------------------------
 
 Functionality of this site
 ==========================
