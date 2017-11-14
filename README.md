@@ -77,13 +77,13 @@ Accessing other code projects from this site
 =============================================
 
 While there are dozens of repo's in my Github account, I tried to only
-plug in some of the more fun and functional ones. These project also 
-demonstrate some of my core skill as a developer so please feel free
-to check them out. To navigate to these projects, either scroll down
-to the WORK section of the site or select WORK from the the menu.
-Once there, you can click on screenshot of the project to jump to a 
-live demo, or click on the Github logo at the bottom of the block to 
-jump to the repo.
+plug in some of the more fun and functional ones. My goal was to try and 
+demonstrate some of my core skills as a developer with these demo's, 
+so please feel free to check them out. To navigate to these projects, 
+either scroll down to the WORK section of the site or select WORK from 
+the the menu. Once there, you can click on screenshot of the project to 
+jump to a live demo, or click on the Github logo at the bottom of the block 
+to jump to the repo.
 
 ![](./assets/work_screenshot.png?cropResize=300,200)
 ===============================================================================
