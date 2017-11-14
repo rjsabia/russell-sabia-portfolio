@@ -2,9 +2,9 @@ The Russell Sabia Portfolio Site
 ================================
 
 Hello my name is Russ, welcome to the source code for 
-russellsabia.com, my portfolio site. I am web developer who 
+russellsabia.com my portfolio site. I am web developer who 
 loves good design, creativity, and functionality. I tried to
-express these things on my portfolio site, so I hope you
+express these things on my portfolio site and I hope you
 enjoy it. 
 
 ![](./assets/homepage_screenshot.png?cropResize=300,200)
@@ -50,12 +50,13 @@ How can I say this professionally, HECK YEAH!!!
 My journey as a developer was only made possible thanks to 
 having great coding mentors, going to an awesome full-stack 
 boot-camp, and always staying open to learning new things. 
-While I am always coding and building new projects, I am 
-looking for a place where I can contribute my skills to a
-team, while also learning from some great people so I can
+While I'm consistently coding and building new projects, I am 
+actively looking for a place where I can contribute my skills 
+to a team, while also learning from some great people so I can
 grow as a developer. 
 
 Shout out to Thinkful for the great mentors and year of awesome coding and learning!!!
+---------------------------------------------------------------------------------------
 
 ![](./assets/thinkful_screenshot.png?cropResize=300,200)
 
