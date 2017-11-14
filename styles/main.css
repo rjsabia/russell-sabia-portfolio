@@ -47,7 +47,6 @@ a {
 }
 
 #page-head {
-	filter: brightness(80%);
   height: 51vw;
 	text-align: center;
 	font-family: clipneon;
@@ -368,7 +367,7 @@ a {
  	width: 100%;
  	position: absolute;
   top: 10vw;
- 	background: rgba(25,25,25,0.96);
+ 	background: rgba(25,25,25,0.8);
  	color: white;
  	font-size: 2vw;
  	padding-top: 8.5vw;
