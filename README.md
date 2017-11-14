@@ -81,14 +81,14 @@ plug in some of the more fun and functional ones. My goal was to try and
 demonstrate some of my core skills as a developer with these demo's, 
 so please feel free to check them out. To navigate to these projects, 
 either scroll down to the WORK section of the site or select WORK from 
-the the menu. Once there, you can click on screenshot of the project to 
+the the menu. Once there you can click on screenshot of the project to 
 jump to a live demo, or click on the Github logo at the bottom of the block 
 to jump to the repo.
 
 ![](./assets/work_screenshot.png?cropResize=300,200)
 ===============================================================================
 
-I always appreciate feedback for any of my projects, including this site. So please
+I always appreciate feedback for any of my projects, including for this site. So please
 don't hesitate to reach out.
 
 Want to get in touch, share your thoughts, or collaborate?
